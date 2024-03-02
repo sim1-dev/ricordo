@@ -1,0 +1,7 @@
+{
+  "name": "ricordo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
