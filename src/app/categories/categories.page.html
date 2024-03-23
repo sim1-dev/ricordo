@@ -1,0 +1,32 @@
+<div>
+  @defer(when categories$) {
+  <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+      @for (category of categories$ | async; track $index) {
+        <ion-item>
+          <ion-label>{{category.name}}</ion-label>
+
+          <ion-icon name="create" color="primary" (click)="openCreateOrUpdateModal(category.id)"></ion-icon>
+          <ion-icon name="trash-outline" color="secondary" (click)="openDeleteModal(category.id)"></ion-icon>
+          
+          <!-- <ion-reorder slot="end"></ion-reorder> -->
+        </ion-item>
+      }
+    </ion-reorder-group>
+  } @loading {
+    Loading...
+  } @error {
+    Something went wrong :(
+  }
+
+  <ion-item>
+    <ion-button (click)="openCreateOrUpdateModal(0)" size="default" style="margin: auto">
+      Create new category
+    </ion-button>
+  </ion-item>
+  
+</div>
+
+
+
+
+

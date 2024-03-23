@@ -24,3 +24,16 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+* {
+    min-width: 0;
+    min-height: 0;
+    border-radius: 0;
+}
+
+@import url("theme/typography.scss");
+
+@import url("theme/components/button.scss");
+@import url("theme/components/tab-bar.scss");
+@import url("theme/components/alert.scss");
+@import url("theme/components/input.scss");

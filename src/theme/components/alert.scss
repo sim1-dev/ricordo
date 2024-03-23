@@ -1,0 +1,34 @@
+.alert-wrapper {
+    padding: 18px;
+}
+
+/* Header */
+.alert-title.sc-ion-alert-md {
+    font-weight: bold;
+}
+
+/* Buttons */
+button.alert-button.alert-button-confirm {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: var(--ion-color-primary);
+    font-weight: 500;
+    color: var(--ion-color-success-contrast);
+    border: 1px solid var(--ion-color-primary);
+}
+
+button.alert-button.alert-button-cancel {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: var(--ion-color-primary);
+}
+
+/* Inputs */
+.alert-input {
+    border: 2px solid var(--ion-border-color) !important;
+    padding: 15px !important;
+    &:focus {
+        border-color: var(--primary) !important;
+        transition: all ease-in-out .1s !important;
+    }
+}
